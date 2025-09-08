@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="PolyStat Dashboard - Hexagonal visualization of Prometheus metrics" />
+    <meta name="keywords" content="prometheus, monitoring, dashboard, hexagons, metrics, kubernetes" />
+    <meta name="author" content="PolyStat Team" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://polystat-dashboard.com/" />
+    <meta property="og:title" content="PolyStat Dashboard" />
+    <meta property="og:description" content="Hexagonal visualization of Prometheus metrics for infrastructure monitoring" />
+    <meta property="og:image" content="https://polystat-dashboard.com/og-image.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://polystat-dashboard.com/" />
+    <meta property="twitter:title" content="PolyStat Dashboard" />
+    <meta property="twitter:description" content="Hexagonal visualization of Prometheus metrics for infrastructure monitoring" />
+    <meta property="twitter:image" content="https://polystat-dashboard.com/og-image.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/vite.svg">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="/favicon-32x32.svg">
+    <link rel="icon" type="image/svg+xml" sizes="16x16" href="/favicon-16x16.svg">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Preload fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <title>PolyStat Dashboard - Hexagonal Prometheus Monitoring</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Fallback script for browsers without ES modules support -->
+    <script nomodule>
+      document.getElementById('root').innerHTML = `
+        <div style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+          font-family: system-ui, -apple-system, sans-serif;
+          text-align: center;
+          padding: 2rem;
+        ">
+          <h1 style="color: #1f2937; margin-bottom: 1rem;">
+            PolyStat Dashboard
+          </h1>
+          <p style="color: #6b7280; margin-bottom: 2rem;">
+            Your browser does not support the ES6 modules required for this application.
+          </p>
+          <p style="color: #9ca3af; font-size: 0.875rem;">
+            Please use a modern browser like Chrome, Firefox, Safari or Edge.
+          </p>
+        </div>
+      `;
+    </script>
+  </body>
+</html>
